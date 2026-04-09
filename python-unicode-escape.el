@@ -48,13 +48,13 @@ for i in range(0x110000):
   "Python snippet that prints NAME<TAB>CHAR lines for every named codepoint.")
 
 (defun python-unicode-escape--load ()
-  "Populate the name cache by calling Python.  Runs at most once per session."
+  "Populate the name cache by calling Python.  Ran at most once per session."
   (unless python-unicode-escape--loaded
     (message "python-unicode-escape: loading Unicode names (one-time)…")
     (with-temp-buffer
       (let ((exit (call-process "python3" nil t nil "-c" python-unicode-escape--python-script)))
         (unless (zerop exit)
-          (error "python-unicode-escape: python3 exited with %s" exit)))
+          (error "python-unicode-escape: Python exited with %s" exit)))
       (goto-char (point-min))
       (while (not (eobp))
         (let* ((line-end (line-end-position))
@@ -78,7 +78,7 @@ for i in range(0x110000):
     (concat "  " ch)))
 
 (defun python-unicode-escape--exit-function (_str status)
-  "After completing _STR, insert closing `}` if not already present."
+  "After completing (when STATUS is finished) _STR, insert closing `}` if not already present."
   (when (eq status 'finished)
     (unless (looking-at-p "}")
       (insert "}"))))
