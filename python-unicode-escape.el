@@ -78,7 +78,7 @@ for i in range(0x110000):
     (concat "  " ch)))
 
 (defun python-unicode-escape--exit-function (_str status)
-  "After completing (when STATUS is finished) _STR, insert closing `}` if not already present."
+  "When STATUS is finished _STR, insert closing `}` if not already present."
   (when (eq status 'finished)
     (unless (looking-at-p "}")
       (insert "}"))))
