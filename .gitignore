@@ -1,0 +1,12 @@
+# Emacs
+*.elc
+*~
+\#*#
+/.emacs.desktop
+/.emacs.desktop.lock
+tramp
+.\#*
+.projectile
+.dir-locals.el
+dist/
+.cask/
