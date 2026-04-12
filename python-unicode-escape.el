@@ -1,7 +1,7 @@
 ;;; python-unicode-escape.el --- Completion for Python \N{NAME} escapes -*- lexical-binding: t -*-
 
 ;; Author: Joe Banks <joe@jb3.dev>
-;; Version: 0.3
+;; Version: 0.4
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: python, unicode, completion, abbrev
 ;; Homepage: https://github.com/jb3/python-unicode-escape
