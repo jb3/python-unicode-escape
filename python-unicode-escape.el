@@ -7,7 +7,7 @@
 ;; Homepage: https://github.com/jb3/python-unicode-escape
 ;; URL: https://github.com/jb3/python-unicode-escape
 
-;; SPDX-License-Identifier: GPL-3.0
+;; SPDX-License-Identifier: GPL-3.0-or-later
 
 ;; Copyright (C) 2026 Joe Banks
 ;;
