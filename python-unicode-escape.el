@@ -135,7 +135,7 @@ Activates when point is inside \\N{...} in a Python buffer."
 ;;;###autoload
 (define-minor-mode python-unicode-escape-mode
   "Complete Python \\N{UNICODE NAME} escapes at point."
-  :lighter " \\N{}"
+  :lighter nil
   (if python-unicode-escape-mode
       (add-hook  'completion-at-point-functions #'python-unicode-escape-completion-at-point nil t)
     (remove-hook 'completion-at-point-functions #'python-unicode-escape-completion-at-point t)))
