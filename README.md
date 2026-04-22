@@ -1,5 +1,7 @@
 # python-unicode-escape.el
 
+[![MELPA](https://melpa.org/packages/python-unicode-escape-badge.svg)](https://melpa.org/#/python-unicode-escape)
+
 Adds autocompletion for Python's `\N{UNICODE NAME}` string escape syntax in Emacs.
 
 Completion is provided via `completion-at-point` (CAPF), making it compatible with `company-mode` (using `company-capf`), `corfu`, and the built-in `M-TAB` / `C-M-i` completion.
@@ -13,6 +15,12 @@ Completion is provided via `completion-at-point` (CAPF), making it compatible wi
 - **Automatic Closing:** Appends the closing `}` if it's missing.
 
 ## Installation
+
+### MELPA
+
+You can install from MELPA from the [`python-unicode-escape`](https://melpa.org/#/python-unicode-escape) package.
+
+See [MELPA docs](https://melpa.org/#/getting-started) for information on setting up, then use `M-x package-install` or your chosen package management solution to install.
 
 ### Manual
 
